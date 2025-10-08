@@ -1,0 +1,53 @@
+/* Sri Lanka themed styles for table-based layout */
+:root{
+	--sri-gold: #f4c542; /* saffron/gold */
+	--sri-maroon: #800000; /* maroon */
+	--sri-green: #1a6b2a; /* deep green */
+	--muted: #444;
+	--bg: #fff8f0;
+}
+*{box-sizing: border-box;}
+body{font-family: Arial, Helvetica, sans-serif; margin:0; background:var(--bg); color:var(--muted);}
+.site-table{border-collapse: separate; border-spacing: 10px; padding: 10px;}
+.site-table td{border-radius:8px; vertical-align: top; padding: 16px;}
+
+.nav{background: linear-gradient(180deg,var(--sri-gold),var(--sri-green)); color:#fff; width:220px;}
+.nav .logo{font-weight:700; font-size:20px; padding:8px 0; text-align:center;}
+.nav nav{display:flex; flex-direction:column; gap:8px; padding-top:10px;}
+.nav a{color:#fff; text-decoration:none; padding:6px 10px; border-radius:4px;}
+.nav a:hover{background:rgba(255,255,255,0.12);}
+
+.header{background:var(--sri-maroon); color:var(--sri-gold);}
+.header-inner{max-width:900px; margin:0 auto;}
+.header h1{margin:6px 0; font-size:32px;}
+.tagline{margin:4px 0 0 0;}
+
+.widget{background:var(--sri-gold); color:var(--sri-maroon); width:160px;}
+.widget-inner{padding:8px;}
+
+.main{background:#fff6dc; box-shadow:0 2px 6px rgba(0,0,0,0.06);} /* light saffron/gold tint */
+.news{background:#fff3d6; padding:14px;} /* Latest News: soft saffron */
+.right{background:#e8f8ef; padding:14px;} /* Quick Links: soft green */
+.gallery{background:#f7fff8; padding:14px;} /* Gallery: very pale green */
+.contact{background:#fffbe6;}
+
+.thumbs{display:flex; gap:8px; margin-top:8px;}
+.thumb{flex:1; background:#f7f7f7; border-radius:6px; height:80px; display:flex; align-items:center; justify-content:center; font-size:28px;}
+
+.weather{margin-top:12px; font-weight:600;}
+
+h2,h3,h4{margin:0 0 8px 0; color:var(--sri-maroon);}
+p, li{line-height:1.4;}
+ul{padding-left:18px; margin:6px 0;}
+
+/* Responsive: stack table cells vertically on small screens */
+@media (max-width: 800px){
+	.site-table{display:block;}
+	.site-table tr{display:block; margin-bottom:10px;}
+	.site-table td{display:block; width:100% !important;}
+	.nav{width:100%; display:flex; flex-direction:row; gap:12px; align-items:center; padding:10px;}
+	.nav nav{flex-direction:row; flex-wrap:wrap;}
+}
+
+/* Small visual adjustments */
+.site-table td select{padding:6px; border-radius:4px;}
