@@ -97,18 +97,3 @@ You can replace that file with a real PNG or JPG screenshot and the README will 
 
 ![Example screenshot](screenshots/example-screenshot.png)
 
-How to replace:
-
-1. Create a `screenshots/` folder in the project root (if it doesn't exist).
-2. Save your screenshot as `example-screenshot.png` (or keep the `.svg`).
-3. Commit the file. The README will show the updated image.
-
-Tip: Keep screenshots under ~200–400 KB for faster loads on GitHub.
-
-If you want, I can also:
-
-- Add a screenshot and show how to include it in the README
-- Add a `CONTRIBUTING.md` or `CODE_OF_CONDUCT.md`
-- Add live-preview instructions for other local servers (Node, http-server, etc.)
-
-Small changes I can make now: add a screenshot example or include a short list of suggested CSS variables — tell me which and I'll add it.
