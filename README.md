@@ -83,9 +83,8 @@ This project is provided under the MIT License. See the `LICENSE` file for detai
 
 ### ✍️ Author
 
-Add your name here (or an organization). Example:
 
-Author: Your Name — replace this with your real name.
+Author: Aravinda Amarasingha
 
 ---
 
